@@ -1,2 +1,3 @@
 # Dv.18
-C++
+this is my first repository
+author - Divyanshu Mishra
