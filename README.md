@@ -40,12 +40,17 @@ which is selected as the output.
 start=0 and end = 203
 <br>
 mid = (0+203)/2=101 , now we will try to allocate each student atmost 101 pages.
-<br><br>
-case-I -> allocate 12 , 34 but as we will further give 67 the sum will be 113 which is greater than 101. 12+34 < 101
-<br><br>
-case-II ->allocate 67 and 90 to the other student but again when we will try to allocate 90 to the 2nd student the sum will exceed 101. 67 < 101
-<br><br>
-case-III->we are going to allocate the 90 to third student but as we have only 2 student ,therefore this solution is not possible. 90 < 101
+<br>
+case-I
+<br>allocate 12 , 34 but as we will further give 67 the sum will be 113 which is greater than 101. 12+34 < 101
+<br>
+case-II
+<br>
+allocate 67 and 90 to the other student but again when we will try to allocate 90 to the 2nd student the sum will exceed 101. 67 < 101
+<br>
+case-III
+<br>
+we are going to allocate the 90 to third student but as we have only 2 student ,therefore this solution is not possible. 90 < 101
 <br><br>
 start = mid + 1 ,
 end = 203 and 
@@ -56,7 +61,7 @@ We have to allocate at mot  152
 case-I
 <br>
  allocate 12, 34 and 67 to the first student but when will try to allocate 90 pages the sum will exceed 152. 12 + 34 + 67 < 152
-<br><br>
+<br>
 case-II
 <br>
 allocate 90 to the 2nd student. 90 < 152
@@ -68,7 +73,7 @@ start = 102 , end = mid - 1 and mid=(start + end)/2
 <br>
 case-I
 <br>12 + 34 + 67 = 113 < 126
-<br><br>
+<br>
 case-II
 <br>
 90 < 126
@@ -80,7 +85,7 @@ start = 102 , end = mid - 1 = 125 and mid =(102+125)/2=113
 case-I
 <br>
 12 + 34 + 67 = 113
-<br><br>
+<br>
 case-II
 <br>
  90 < 113
@@ -92,7 +97,7 @@ start = 102, end = mid - 1 = 112, mid=(102+112)/2=107
 case-I
 <br>
 12 + 34 + 67 > 107 so allocate the 67 pages to the other student 12 + 34 < 107
-<br><br>
+<br>
 case-II
 <br>
 67 + 90 > 107 ,allocate the 90 pages to other student but as there are only two student so this solution is not possible. Pages has to be more than 107
@@ -104,7 +109,7 @@ start = mid + 1 = 107+1=108 , end = 112, mid = (108+112)/2=110
 case-I
 <br>
 12 + 34 < 110
-<br><br>
+<br>
 case-II
 <br>
 67 < 110, 90 is left which cant be allocated so this is also not possible solution.
