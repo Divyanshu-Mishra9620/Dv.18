@@ -53,36 +53,61 @@ mid = (102 + 203) / 2 = 152
 <br>
 We have to allocate at mot  152
 <br>
-case I-> allocate 12, 34 and 67 to the first student but when will try to allocate 90 pages the sum will exceed 152. 12 + 34 + 67 < 152
+case-I
+<br>
+ allocate 12, 34 and 67 to the first student but when will try to allocate 90 pages the sum will exceed 152. 12 + 34 + 67 < 152
 <br><br>
-case-II->allocate 90 to the 2nd student. 90 < 152
-<br>It can be the possible solution ,but as the question asks to find the minimum pages. We will check if pages less than 152 is possible.
+case-II
+<br>
+allocate 90 to the 2nd student. 90 < 152
+<br>
+It can be the possible solution ,but as the question asks to find the minimum pages. We will check if pages less than 152 is possible.
 <br><br>
 start = 102 , end = mid - 1 and mid=(start + end)/2
 (102 + 151) / 2 = 126 
 <br>
-case-I->12 + 34 + 67 = 113 < 126
+case-I
+<br>12 + 34 + 67 = 113 < 126
 <br><br>
-case-II-> 90 < 126
-<br>update the answer to 126 and check if pages less than 126 is possible or not.
-<br><br>start = 102 , end = mid - 1 = 125 and mid =(102+125)/2=113
+case-II
 <br>
-case-I-> 12 + 34 + 67 = 113
-<br><br>
-case-II-> 90 < 113
-<br>Update the answer to 113 and check further
-<br><br>start = 102, end = mid - 1 = 112, mid=(102+112)/2=107
+90 < 126
 <br>
-case-I-> 12 + 34 + 67 > 107 so allocate the 67 pages to the other student 12 + 34 < 107
+update the answer to 126 and check if pages less than 126 is possible or not.
 <br><br>
-case-II-> 67 + 90 > 107 ,allocate the 90 pages to other student but as there are only two student so this solution is not possible. Pages has to be more than 107
-<br> last updated answer is 113
+start = 102 , end = mid - 1 = 125 and mid =(102+125)/2=113
+<br>
+case-I
+<br>
+12 + 34 + 67 = 113
+<br><br>
+case-II
+<br>
+ 90 < 113
+<br>
+Update the answer to 113 and check further
+<br><br>
+start = 102, end = mid - 1 = 112, mid=(102+112)/2=107
+<br>
+case-I
+<br>
+12 + 34 + 67 > 107 so allocate the 67 pages to the other student 12 + 34 < 107
+<br><br>
+case-II
+<br>
+67 + 90 > 107 ,allocate the 90 pages to other student but as there are only two student so this solution is not possible. Pages has to be more than 107
+<br> 
+last updated answer is 113
 <br><br>
 start = mid + 1 = 107+1=108 , end = 112, mid = (108+112)/2=110
 <br>
-case-I-> 12 + 34 < 110
+case-I
+<br>
+12 + 34 < 110
 <br><br>
-case-II-> 67 < 110, 90 is left which cant be allocated so this is also not possible solution.
+case-II
+<br>
+67 < 110, 90 is left which cant be allocated so this is also not possible solution.
 <br><br>
 start = mid + 1 = 111, end = 112, mid =(111+112)/2=111
 <br>
