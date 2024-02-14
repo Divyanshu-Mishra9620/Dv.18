@@ -2,8 +2,8 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-//returning prime whose sum is N
-//first prime should be minimum that is possible
+// returning prime whose sum is N
+// first prime should be minimum that is possible
 
 vector<bool> Sieve(int n)
 {
