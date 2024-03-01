@@ -21,10 +21,10 @@ int mincostTickets(vector<int> &days, vector<int> &costs, int i)
         return 0;
 
     // 1 case solve baki recursion
-    // day 1 pass taken
+    // 1 day pass taken
     int cost1 = costs[0] + mincostTickets(days, costs, i + 1);
 
-    // day 7 pass taken
+    // 7 day pass taken
     // pass ka end day kya h
     int pass_EndDay = days[i] + 7 - 1;
     int j = i;
@@ -34,7 +34,7 @@ int mincostTickets(vector<int> &days, vector<int> &costs, int i)
     }
     int cost7 = costs[1] + mincostTickets(days, costs, j);
 
-    // day 30 pass taken
+    // 30 day pass taken
     pass_EndDay = days[i] + 30 - 1;
     j = i;
     while (j < days.size() && days[j] <= pass_EndDay)
